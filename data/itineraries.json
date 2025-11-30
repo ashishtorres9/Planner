@@ -1,0 +1,1044 @@
+{
+  "nagarkot-namobuddha": {
+    "name": "Nagarkot to Namobuddha – Heritage Temples and Spiritual Journeys",
+    "culture": "buddhist_hindu",
+    "days": 3,
+    "budget_usd": 133.6,
+    "keywords": ["nagarkot", "namobuddha", "changunarayan", "buddhist", "everest", "UNESCO", "hindu"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Arrival in Nagarkot – Mountain Views and Sunset Serenity",
+        "activities": [
+          {
+            "time": "07:30–09:30",
+            "type": "Transportation",
+            "details": "Driving from Kathmandu to Nagarkot (32 km, ~2 hours) by private taxi. Depart early to avoid traffic.",
+            "cost": "$18 per vehicle",
+            "notes": "Morning departure ensures cooler weather and smoother travel.",
+            "booking_link": "{{taxi_ktm_nagarkot}}"
+          },
+          {
+            "time": "10:00–12:30",
+            "type": "Attraction Visit",
+            "details": "Nagarkot Viewpoint – Panoramic views of the Himalayas including Everest on clear days.",
+            "cost": "$4 per person",
+            "notes": "Bring warm clothing—wind can be strong even in daytime.",
+            "booking_link": null
+          },
+          {
+            "time": "12:30–13:30",
+            "type": "Dining",
+            "details": "Berg House Café – Nepali dal bhat, momos, coffee",
+            "cost": "$8 per person",
+            "notes": "Short walk (5 min) from viewpoint; popular with trekkers.",
+            "booking_link": "{{berg_house_cafe}}"
+          },
+          {
+            "time": "13:30–15:00",
+            "type": "Attraction Visit",
+            "details": "Nagarkot Village Trail – Forested path through pine woods and local villages.",
+            "cost": "$0",
+            "notes": "Wear hiking shoes; trail may be muddy if recent rain.",
+            "booking_link": null
+          },
+          {
+            "time": "18:30–19:30",
+            "type": "Dining",
+            "details": "Mandap Giri Restaurant – Traditional Newari dishes, thakali set meal",
+            "cost": "$9 per person",
+            "notes": "Highly rated (4.8 stars); offers indoor and outdoor seating.",
+            "booking_link": "{{mandap_giri}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Budget Guesthouse, Nagarkot",
+          "cost": "$25 per night",
+          "booking_link": "{{nagarkot_guesthouse}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Trek from Nagarkot to Namobuddha – Heritage Temples and Spiritual Journeys",
+        "activities": [
+          {
+            "time": "07:30–11:00",
+            "type": "Transportation",
+            "details": "Hiking from Nagarkot to Changunarayan Temple (6.5 km, 3.5 hours). Moderate downhill terrain through forests and rural paths.",
+            "cost": "$0",
+            "notes": "First leg of multi-stage trek; pace yourself.",
+            "booking_link": null
+          },
+          {
+            "time": "11:00–12:15",
+            "type": "Attraction Visit",
+            "details": "Changunarayan Temple – Oldest Hindu temple in Nepal, UNESCO World Heritage Site, renowned for intricate wood carvings.",
+            "cost": "$4.6 per person",
+            "notes": "Sacred site—modest dress required. Photography allowed outside sanctum.",
+            "booking_link": null
+          },
+          {
+            "time": "12:15–13:15",
+            "type": "Dining",
+            "details": "La Bella Nepali Restaurant – Dal bhat, curries, fresh juices",
+            "cost": "$7 per person",
+            "notes": "Reputable for hygiene and authentic flavors.",
+            "booking_link": "{{la_bella_nepali}}"
+          },
+          {
+            "time": "13:15–15:45",
+            "type": "Transportation",
+            "details": "Hiking from Changunarayan Temple to Namobuddha (8 km, 2.5 hours). Hilly route with views of farmland, prayer flags, and forest trails.",
+            "cost": "$0",
+            "notes": "Final approach includes uphill climb—conserve energy.",
+            "booking_link": null
+          },
+          {
+            "time": "15:45–17:15",
+            "type": "Attraction Visit",
+            "details": "Namobuddha Monastery – Sacred Buddhist pilgrimage site linked to a tale of selfless sacrifice.",
+            "cost": "$0",
+            "notes": "Circumambulate stupa clockwise as per tradition.",
+            "booking_link": null
+          },
+          {
+            "time": "18:30–19:30",
+            "type": "Dining",
+            "details": "Gaia Holiday Home Restaurant – Organic Nepali meals, vegetarian options",
+            "cost": "$8 per person",
+            "notes": "Eco-friendly establishment with scenic garden dining.",
+            "booking_link": "{{gaia_holiday_home}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Teahouse/Guesthouse, Namobuddha",
+          "cost": "$20 per night",
+          "booking_link": "{{namobuddha_guesthouse}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Final Morning Reflection & Return to Kathmandu",
+        "activities": [
+          {
+            "time": "06:30–09:00",
+            "type": "Attraction Visit",
+            "details": "Morning Meditation or Loop Hike around Namobuddha – Short circuit trail around monastery complex offering panoramic valley views.",
+            "cost": "$0",
+            "notes": "Ideal farewell activity before descending to city life.",
+            "booking_link": null
+          },
+          {
+            "time": "10:30–12:00",
+            "type": "Transportation",
+            "details": "Drive from Namobuddha to central Kathmandu (Thamel area) (40 km, 1.5 hours) by private taxi.",
+            "cost": "$20 per vehicle",
+            "notes": "Avoid afternoon congestion—morning is optimal.",
+            "booking_link": "{{taxi_namobuddha_ktm}}"
+          },
+          {
+            "time": "12:00–13:00",
+            "type": "Dining",
+            "details": "Yala Cafe – Fusion cuisine, pancakes, smoothie bowls, espresso",
+            "cost": "$10 per person",
+            "notes": "Popular expat-friendly spot with Wi-Fi and cozy ambiance.",
+            "booking_link": "{{yala_cafe}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "dhulikhel-panauti": {
+    "name": "Dhulikhel to Panauti – Scenic Ridge Walks & Living Heritage",
+    "culture": "newari",
+    "days": 3,
+    "budget_usd": 118,
+    "keywords": ["dhulikhel", "panauti", "newari", "heritage", "langtang"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Arrival in Dhulikhel – Himalayan Panorama & Newari Charm",
+        "activities": [
+          {
+            "time": "08:00–09:30",
+            "type": "Transportation",
+            "details": "Private taxi from Kathmandu (Thamel) to Dhulikhel (30 km, ~1.5 hrs).",
+            "cost": "$16 per vehicle",
+            "notes": "Early departure avoids traffic; scenic drive along Arniko Highway.",
+            "booking_link": "{{taxi_ktm_dhulikhel}}"
+          },
+          {
+            "time": "10:00–12:30",
+            "type": "Attraction Visit",
+            "details": "Dhulikhel Viewpoint (Kali Temple Hill) – Sweeping views of Langtang, Ganesh Himal, and Gaurishankar ranges.",
+            "cost": "$0",
+            "notes": "Moderate uphill walk (20 mins) from town center.",
+            "booking_link": null
+          },
+          {
+            "time": "12:30–13:30",
+            "type": "Dining",
+            "details": "Hotel Himalayan Villa Restaurant – Dal bhat, thukpa, fresh lemon-honey tea",
+            "cost": "$7 per person",
+            "notes": "Rooftop seating with mountain views.",
+            "booking_link": "{{hotel_himalayan_villa}}"
+          },
+          {
+            "time": "13:30–15:30",
+            "type": "Attraction Visit",
+            "details": "Dhulikhel Old Town Walk – Explore cobbled lanes, traditional Newari houses, and centuries-old shrines.",
+            "cost": "$0",
+            "notes": "Wear comfortable shoes—uneven stone paths.",
+            "booking_link": null
+          },
+          {
+            "time": "18:30–19:30",
+            "type": "Dining",
+            "details": "Bhojan Griha – Organic farm-to-table Nepali thali",
+            "cost": "$8 per person",
+            "notes": "Family-run; uses homegrown vegetables.",
+            "booking_link": "{{bhojan_griha}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Dhulikhel Eco Lodge",
+          "cost": "$22 per night",
+          "booking_link": "{{dhulikhel_eco_lodge}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Trek from Dhulikhel to Panauti – Ridge Trail & Sacred Confluence",
+        "activities": [
+          {
+            "time": "07:00–11:30",
+            "type": "Transportation",
+            "details": "Hiking: Dhulikhel → Namobuddha → Panauti (12 km total, ~4.5 hours). Forest trails, terraced farms, prayer flags.",
+            "cost": "$0",
+            "notes": "Well-marked trail; moderate difficulty.",
+            "booking_link": null
+          },
+          {
+            "time": "12:30–13:30",
+            "type": "Dining",
+            "details": "Namobuddha Café – Momos, veg curry, herbal teas",
+            "cost": "$6 per person",
+            "notes": "Simple but clean; great post-hike refuel.",
+            "booking_link": "{{namobuddha_cafe}}"
+          },
+          {
+            "time": "15:00–17:00",
+            "type": "Attraction Visit",
+            "details": "Panauti Heritage Walk – One of Nepal’s best-preserved medieval towns at the confluence of Roshi and Punyamati rivers.",
+            "cost": "$0",
+            "notes": "Modest dress required at temples.",
+            "booking_link": null
+          },
+          {
+            "time": "18:00–19:00",
+            "type": "Dining",
+            "details": "Panauti Guest House Restaurant – Local bara (lentil pancake), goat curry, rice beer",
+            "cost": "$7 per person",
+            "notes": "Authentic Newari flavors in a heritage setting.",
+            "booking_link": "{{panauti_guest_house}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Panauti Heritage Home",
+          "cost": "$20 per night",
+          "booking_link": "{{panauti_heritage_home}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Spiritual Morning & Return to Kathmandu",
+        "activities": [
+          {
+            "time": "06:00–07:00",
+            "type": "Attraction Visit",
+            "details": "Morning Ritual at Indreshwar Temple – Witness daily puja (prayer ceremony) and riverbank rituals.",
+            "cost": "$0",
+            "notes": "One of Nepal’s oldest pagoda-style temples.",
+            "booking_link": null
+          },
+          {
+            "time": "09:00–10:30",
+            "type": "Transportation",
+            "details": "Private taxi from Panauti to Kathmandu (Thamel) (32 km, 1.5 hours)",
+            "cost": "$18 per vehicle",
+            "notes": "Smooth road; scenic valley views.",
+            "booking_link": "{{taxi_panauti_ktm}}"
+          },
+          {
+            "time": "10:30–12:00",
+            "type": "Dining",
+            "details": "OR2K – Middle Eastern Kitchen – Hummus, falafel, fresh juices",
+            "cost": "$9 per person",
+            "notes": "Vegetarian-friendly; cozy courtyard.",
+            "booking_link": "{{or2k}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "manaslu-foothills": {
+    "name": "Manaslu Foothills Secret Loop – Arughat to Soti Khola via Gurung Villages",
+    "culture": "gurung",
+    "days": 3,
+    "budget_usd": 100,
+    "keywords": ["manaslu", "gurung", "arughat", "waterfall", "snow leopard", "shaman"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Jungle Trail to Gurung Village",
+        "activities": [
+          {
+            "time": "05:30",
+            "type": "Transportation",
+            "details": "Local bus from Gongabu Bus Park to Arughat Bazaar (Gorkha district).",
+            "cost": "$9",
+            "notes": "7-hour scenic ride along Budhi Gandaki River.",
+            "booking_link": "{{bus_ktm_arughat}}"
+          },
+          {
+            "time": "12:30",
+            "type": "Dining",
+            "details": "Arughat Riverside Café – Spicy gundruk soup + rice",
+            "cost": "$4",
+            "notes": "Last stocked village—buy snacks here.",
+            "booking_link": "{{arughat_riverside_cafe}}"
+          },
+          {
+            "time": "13:30–17:30",
+            "type": "Transportation",
+            "details": "Trek to Kharibot (7 km through subtropical jungle, cardamom plantations, suspension bridges).",
+            "cost": "$0",
+            "notes": "Humid trail—leech socks recommended (Oct is dry, but jungle stays damp).",
+            "booking_link": null
+          },
+          {
+            "time": "18:00",
+            "type": "Accommodation",
+            "details": "Stay in a Gurung ghar (traditional home) with bamboo walls and thatched roof.",
+            "cost": "$12 (dinner + breakfast)",
+            "notes": "Host family offers raksi (millet liquor) welcome toast.",
+            "booking_link": "{{kharibot_gurung_homestay}}"
+          },
+          {
+            "time": "19:30",
+            "type": "Other",
+            "details": "Optional: Learn Gurung folk songs or watch ghyabring drum ritual.",
+            "cost": "$0",
+            "notes": "Elders share stories of snow leopard sightings.",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Kharibot Gurung Homestay",
+          "cost": "$12",
+          "booking_link": "{{kharibot_gurung_homestay}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Waterfall Pilgrimage & Mountain Vistas",
+        "activities": [
+          {
+            "time": "07:00–11:00",
+            "type": "Transportation",
+            "details": "Trek to Rupina La Pass (6 km uphill through rhododendron forests and terraced cornfields).",
+            "cost": "$0",
+            "notes": "Steep climb; rest at chautara (stone benches) with panoramic views.",
+            "booking_link": null
+          },
+          {
+            "time": "11:00–12:00",
+            "type": "Attraction Visit",
+            "details": "Rupina La Waterfall – Sacred 50m cascade—locals tie prayer flags for healing.",
+            "cost": "$0",
+            "notes": "Photography only from designated spots—spiritually sensitive site.",
+            "booking_link": null
+          },
+          {
+            "time": "12:00",
+            "type": "Dining",
+            "details": "Packed meal by the falls (buckwheat bread + cheese).",
+            "cost": "$4",
+            "notes": "No teahouses—bring your own or hire a local cook ($10 extra).",
+            "booking_link": "{{packed_lunch_rupina}}"
+          },
+          {
+            "time": "13:00–16:00",
+            "type": "Transportation",
+            "details": "Trek to Soti Khola (8 km downhill through bamboo groves and river gorges).",
+            "cost": "$0",
+            "notes": "Final descent is steep—trekking poles essential.",
+            "booking_link": null
+          },
+          {
+            "time": "16:30",
+            "type": "Accommodation",
+            "details": "Lodge in Soti Khola with riverside garden.",
+            "cost": "$15 (dinner + breakfast)",
+            "notes": "Hot water available (wood-heated).",
+            "booking_link": "{{soti_khola_lodge}}"
+          },
+          {
+            "time": "19:00",
+            "type": "Dining",
+            "details": "Sekuwa (grilled goat) with kinema (fermented soybeans).",
+            "cost": "Included",
+            "notes": "Gurung specialty—bold flavors!",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Soti Khola Eco Lodge",
+          "cost": "$15",
+          "booking_link": "{{soti_khola_lodge}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Return Through the River Gorge",
+        "activities": [
+          {
+            "time": "06:00",
+            "type": "Attraction Visit",
+            "details": "Sunrise Walk – Short hike to Soti Viewpoint for Manaslu panorama.",
+            "cost": "$0",
+            "notes": "Mist often clears by 6:30 AM—perfect photo light.",
+            "booking_link": null
+          },
+          {
+            "time": "08:00–10:00",
+            "type": "Transportation",
+            "details": "Trek to Arughat (5 km flat trail along Budhi Gandaki River).",
+            "cost": "$0",
+            "notes": "Easy walk—recover tired legs.",
+            "booking_link": null
+          },
+          {
+            "time": "10:30",
+            "type": "Transportation",
+            "details": "Local bus departs Arughat hourly to Kathmandu.",
+            "cost": "$9",
+            "notes": "Arrive Kathmandu by 18:00.",
+            "booking_link": "{{bus_arughat_ktm}}"
+          },
+          {
+            "time": "19:00",
+            "type": "Dining",
+            "details": "Gurung Kitchen, Thamel – Authentic dhido and tongba (millet beer in bamboo vessel).",
+            "cost": "$10",
+            "notes": "Final taste of Gurung hospitality.",
+            "booking_link": "{{gurung_kitchen}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "ilam-tea-loop": {
+    "name": "Ilam Tea Garden Loop – Mai Pokhari to Antu Danda via Rolling Green Hills",
+    "culture": "limbu",
+    "days": 3,
+    "budget_usd": 65,
+    "keywords": ["ilam", "tea", "kanchenjunga", "limbu", "darjeeling", "organic"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Ilam Bazaar → Mai Pokhari",
+        "activities": [
+          {
+            "time": "All Day",
+            "type": "Transportation",
+            "details": "Bus from Kathmandu to Ilam (14 hrs, overnight; $12).",
+            "cost": "$12",
+            "notes": "Scenic mountain highway; bring snacks.",
+            "booking_link": "{{bus_ktm_ilam}}"
+          },
+          {
+            "time": "Afternoon",
+            "type": "Transportation",
+            "details": "Trek through tea estates to Mai Pokhari (3 hrs) – a sacred lake surrounded by rhododendron forest.",
+            "cost": "$0",
+            "notes": "Guided by Limbu women’s cooperative.",
+            "booking_link": null
+          },
+          {
+            "time": "Evening",
+            "type": "Accommodation",
+            "details": "Stay in eco-lodge run by Limbu women’s cooperative.",
+            "cost": "$18",
+            "notes": "Includes dinner + breakfast with organic tea.",
+            "booking_link": "{{mai_pokhari_eco_lodge}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Mai Pokhari Eco Lodge",
+          "cost": "$18",
+          "booking_link": "{{mai_pokhari_eco_lodge}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Mai Pokhari → Antu Danda – Kanchenjunga Views",
+        "activities": [
+          {
+            "time": "Morning",
+            "type": "Transportation",
+            "details": "Hike ridge trail with panoramic Kanchenjunga views (4 hrs).",
+            "cost": "$0",
+            "notes": "Visit Antu Danda Viewpoint —legend says you can see 7 peaks at dawn.",
+            "booking_link": null
+          },
+          {
+            "time": "Afternoon",
+            "type": "Dining",
+            "details": "Lunch with tea-farmer family; learn tea-rolling.",
+            "cost": "$20 (includes guided tea experience)",
+            "notes": "Hands-on cultural activity.",
+            "booking_link": "{{limbu_tea_experience}}"
+          },
+          {
+            "time": "Evening",
+            "type": "Accommodation",
+            "details": "Overnight in homestay with mountain-view balcony.",
+            "cost": "Included in experience",
+            "notes": "Authentic Limbu hospitality.",
+            "booking_link": "{{antu_danda_homestay}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Antu Danda Homestay",
+          "cost": "$0 (included)",
+          "booking_link": "{{antu_danda_homestay}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Return to Kathmandu",
+        "activities": [
+          {
+            "time": "Morning",
+            "type": "Dining",
+            "details": "Morning tea ceremony + breakfast with fresh sel roti.",
+            "cost": "Included",
+            "notes": "Final taste of Ilam’s famous white tea.",
+            "booking_link": null
+          },
+          {
+            "time": "Late Morning",
+            "type": "Transportation",
+            "details": "Jeep to Ilam Bazaar (1 hr, $5). Bus to Kathmandu (overnight, $12).",
+            "cost": "$17",
+            "notes": "Overnight bus arrives Kathmandu next morning.",
+            "booking_link": "{{jeep_antu_ilam}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "kavre-palanchok": {
+    "name": "Kavre-Palanchok Hidden Circuit – Dhulikhel to Banepa via Forgotten Trails",
+    "culture": "newari",
+    "days": 3,
+    "budget_usd": 75,
+    "keywords": ["kavre", "banepa", "newari", "no permit", "living heritage", "farm-to-table"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Dhulikhel → Kshetrapa → Panchkhal",
+        "activities": [
+          {
+            "time": "07:00",
+            "type": "Dining",
+            "details": "Packed breakfast (local sel roti + yogurt) from Dhulikhel Organic Farm.",
+            "cost": "$3",
+            "notes": "Support women’s agro-cooperative.",
+            "booking_link": "{{dhulikhel_organic_farm}}"
+          },
+          {
+            "time": "07:30–12:30",
+            "type": "Transportation",
+            "details": "Trek to Kshetrapa (8 km through terraced millet fields, stone-paved trails, oak forests).",
+            "cost": "$0",
+            "notes": "Trail marked by red tika dots on rocks—follow the locals!",
+            "booking_link": null
+          },
+          {
+            "time": "12:30",
+            "type": "Dining",
+            "details": "Lunch at Kshetrapa Homestay – Bara (lentil pancake) with alu ko achar (potato pickle) and home-brewed jaand (rice beer).",
+            "cost": "$5",
+            "notes": "Host family demonstrates traditional dhaka weaving.",
+            "booking_link": "{{kshetrapa_homestay}}"
+          },
+          {
+            "time": "13:30–15:30",
+            "type": "Transportation",
+            "details": "Trek to Panchkhal (4 km downhill through cardamom groves and irrigation canals).",
+            "cost": "$0",
+            "notes": "Look for langur monkeys in the canopy.",
+            "booking_link": null
+          },
+          {
+            "time": "16:00",
+            "type": "Accommodation",
+            "details": "Stay in a restored Newari bahal (courtyard house) with carved windows.",
+            "cost": "$15 (includes dinner & breakfast)",
+            "notes": "Courtyard lit by oil lamps at night.",
+            "booking_link": "{{panchkhel_heritage_courtyard}}"
+          },
+          {
+            "time": "18:30",
+            "type": "Dining",
+            "details": "Sanya Khuna (fermented fish curry) + baji (beaten rice)—a Kavre specialty.",
+            "cost": "Included",
+            "notes": "Rare outside this valley—adventurous eaters only!",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Panchkhal Heritage Courtyard",
+          "cost": "$15",
+          "booking_link": "{{panchkhel_heritage_courtyard}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Panchkhal → Namobuddha → Banepa",
+        "activities": [
+          {
+            "time": "07:00–10:30",
+            "type": "Transportation",
+            "details": "Trek to Namobuddha (6 km uphill through pine forests and prayer-flagged ridges).",
+            "cost": "$0",
+            "notes": "Pass Gufa Devi Cave —a shrine where locals leave offerings for safe childbirth.",
+            "booking_link": null
+          },
+          {
+            "time": "10:30–12:00",
+            "type": "Attraction Visit",
+            "details": "Namobuddha Monastery Visit – Circumambulate the stupa; join monks for butter tea.",
+            "cost": "$0",
+            "notes": "Legend: Prince Mahasattva sacrificed himself to feed a tigress here.",
+            "booking_link": null
+          },
+          {
+            "time": "12:00",
+            "type": "Dining",
+            "details": "Simple dal bhat at monastery guest kitchen.",
+            "cost": "$4",
+            "notes": "Vegetarian only—kitchen follows Buddhist precepts.",
+            "booking_link": null
+          },
+          {
+            "time": "13:00–16:00",
+            "type": "Transportation",
+            "details": "Trek to Banepa (7 km descent through terraced hills, mustard fields, and Newari hamlets).",
+            "cost": "$0",
+            "notes": "Final stretch follows the ancient Kathmandu–Lhasa trade route.",
+            "booking_link": null
+          },
+          {
+            "time": "16:30",
+            "type": "Accommodation",
+            "details": "Stay in a heritage math (priest’s house) near Banepa Durbar Square.",
+            "cost": "$18 (includes dinner & breakfast)",
+            "notes": "Room overlooks 17th-century stone dhunge dhara (spout).",
+            "booking_link": "{{banepa_heritage_math}}"
+          },
+          {
+            "time": "19:00",
+            "type": "Dining",
+            "details": "Yomari (rice-flour dumplings with molasses) + kwati (sprouted bean soup).",
+            "cost": "Included",
+            "notes": "Seasonal delicacy—only made during festivals, but hosts prepare for guests!",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Banepa Heritage Math",
+          "cost": "$18",
+          "booking_link": "{{banepa_heritage_math}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Banepa → Panauti → Kathmandu",
+        "activities": [
+          {
+            "time": "06:00",
+            "type": "Attraction Visit",
+            "details": "Sunrise at Punyamata Riverbank – Join locals for morning rituals at the sacred confluence (triveni) of Roshi, Punyamata, and Lilawati rivers.",
+            "cost": "$0",
+            "notes": "Wash face in holy waters for blessings.",
+            "booking_link": null
+          },
+          {
+            "time": "08:00–10:00",
+            "type": "Transportation",
+            "details": "Walk to Panauti (3 km flat trail along riverbanks and rice paddies). Visit Indreshwar Mahadev Temple (1294 AD).",
+            "cost": "$0",
+            "notes": "Panauti = “city of abundance”—legend says no one ever starved here.",
+            "booking_link": null
+          },
+          {
+            "time": "10:30",
+            "type": "Transportation",
+            "details": "Local bus from Panauti to Ratna Park, Kathmandu (1 hour).",
+            "cost": "$1.50",
+            "notes": "Buses leave every 30 mins.",
+            "booking_link": "{{bus_panauti_ktm}}"
+          },
+          {
+            "time": "12:00",
+            "type": "Dining",
+            "details": "Newa Lahana, Patan – Authentic Newari feast in a 300-year-old courtyard.",
+            "cost": "$10",
+            "notes": "Includes baji, choila, and aila.",
+            "booking_link": "{{newa_lahana}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "tamang-heritage": {
+    "name": "Tamang Heritage Trail – Helambu Loop (Syabrubesi to Melamchi Pul)",
+    "culture": "tamang",
+    "days": 3,
+    "budget_usd": 93,
+    "keywords": ["tamang", "helambu", "gatlang", "thuman", "culture"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Cultural Heart of Helambu",
+        "activities": [
+          {
+            "time": "06:00",
+            "type": "Transportation",
+            "details": "Local bus from Machha Pokhari to Syabrubesi (Rasuwa district).",
+            "cost": "$8",
+            "notes": "Scenic ride along Trishuli River; bring motion-sickness meds if needed.",
+            "booking_link": "{{bus_ktm_syabrubesi}}"
+          },
+          {
+            "time": "13:00",
+            "type": "Dining",
+            "details": "Lunch at Snow View Restaurant (dal bhat + local greens).",
+            "cost": "$5",
+            "notes": "Meet your guide (optional but recommended; $20/day).",
+            "booking_link": "{{snow_view_restaurant}}"
+          },
+          {
+            "time": "14:00–18:00",
+            "type": "Transportation",
+            "details": "Trek to Gatlang (4 km uphill through rhododendron forests, terraced farms, and suspension bridges).",
+            "cost": "$0",
+            "notes": "Moderate climb; Tamang women often seen carrying firewood.",
+            "booking_link": null
+          },
+          {
+            "time": "18:30",
+            "type": "Accommodation",
+            "details": "Stay with a Tamang family in a traditional stone house with bukhari (wood stove).",
+            "cost": "$12 (includes dinner & breakfast)",
+            "notes": "Experience chhyang (millet beer) welcome drink.",
+            "booking_link": "{{gatlang_homestay}}"
+          },
+          {
+            "time": "19:30",
+            "type": "Cultural Evening",
+            "details": "Optional: Join family for butter tea + storytelling about Tamang shamanic traditions.",
+            "cost": "$0",
+            "notes": "Ask permission before photographing rituals.",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Tamang Heritage Homestay, Gatlang",
+          "cost": "$12",
+          "booking_link": "{{gatlang_homestay}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Hot Springs & Hidden Valleys",
+        "activities": [
+          {
+            "time": "07:00",
+            "type": "Dining",
+            "details": "Tsampa (roasted barley porridge) + yak butter tea.",
+            "cost": "Included",
+            "notes": "High-energy local staple.",
+            "booking_link": null
+          },
+          {
+            "time": "08:00–12:00",
+            "type": "Transportation",
+            "details": "Trek to Tatopani (5 km through pine forests, prayer flags, and yak pastures).",
+            "cost": "$0",
+            "notes": "Look for Himalayan tahr (wild goat) on cliffs.",
+            "booking_link": null
+          },
+          {
+            "time": "12:00",
+            "type": "Dining",
+            "details": "Packed meal or eat at Tatopani teahouse (momos + noodle soup).",
+            "cost": "$4",
+            "notes": "Natural hot spring nearby—soak tired feet!",
+            "booking_link": "{{tatopani_teahouse}}"
+          },
+          {
+            "time": "13:00–16:00",
+            "type": "Transportation",
+            "details": "Trek to Thuman (3 km descent into a secluded valley).",
+            "cost": "$0",
+            "notes": "Thuman = “place of 100 springs”—crystal-clear streams everywhere.",
+            "booking_link": null
+          },
+          {
+            "time": "16:30",
+            "type": "Accommodation",
+            "details": "Stone house with carved windows; help family grind barley if invited.",
+            "cost": "$12 (dinner + breakfast)",
+            "notes": "Village has no electricity—candles after dark.",
+            "booking_link": "{{thuman_homestay}}"
+          },
+          {
+            "time": "19:00",
+            "type": "Star Gazing",
+            "details": "Milky Way visible without light pollution.",
+            "cost": "$0",
+            "notes": "Tamang elders share constellations linked to folklore.",
+            "booking_link": null
+          }
+        ],
+        "accommodation": {
+          "name": "Thuman Community Homestay",
+          "cost": "$12",
+          "booking_link": "{{thuman_homestay}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Sacred Confluence & Return",
+        "activities": [
+          {
+            "time": "06:00",
+            "type": "Attraction Visit",
+            "details": "Join villagers at Thuman Monastery for morning chants.",
+            "cost": "$0",
+            "notes": "Dress modestly; remove shoes.",
+            "booking_link": null
+          },
+          {
+            "time": "07:00",
+            "type": "Dining",
+            "details": "Buckwheat pancakes with honey.",
+            "cost": "Included",
+            "notes": "Made from local mountain honey.",
+            "booking_link": null
+          },
+          {
+            "time": "08:00–11:00",
+            "type": "Transportation",
+            "details": "Trek to Melamchi Pul (6 km downhill through walnut forests and terraced slopes).",
+            "cost": "$0",
+            "notes": "Final trail passes mani stones inscribed with “Om Mani Padme Hum.”",
+            "booking_link": null
+          },
+          {
+            "time": "11:30",
+            "type": "Transportation",
+            "details": "Local bus from Melamchi Pul to Kathmandu (4–5 hours).",
+            "cost": "$6",
+            "notes": "Stop at Melamchi Bazaar for last-minute yomari (rice-flour dumplings).",
+            "booking_link": "{{bus_melamchi_ktm}}"
+          },
+          {
+            "time": "17:00",
+            "type": "Dining",
+            "details": "Celebrate with Newari feast at Nepali Chulo.",
+            "cost": "$10",
+            "notes": "Try choila (spiced grilled meat) and baji (beaten rice).",
+            "booking_link": "{{nepali_chulo}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  },
+  "shivapuri-escape": {
+    "name": "Shivapuri Nagarjun National Park – Forest Trails & Monastery Serenity",
+    "culture": "hindu_buddhist_newari",
+    "days": 3,
+    "budget_usd": 104,
+    "keywords": ["shivapuri", "chisapani", "budhanilkantha", "kirtipur", "kathmandu"],
+    "itinerary": [
+      {
+        "date": "October 5, 2025",
+        "title": "Gateway to the Green Himalayas",
+        "activities": [
+          {
+            "time": "08:00–09:00",
+            "type": "Transportation",
+            "details": "Local bus or shared taxi from Kathmandu (Ratna Park) to Sundarijal (15 km, ~1 hour).",
+            "cost": "$1.50 (bus) or $8 (shared taxi)",
+            "notes": "Buses depart hourly; shared taxis faster but slightly pricier.",
+            "booking_link": "{{transport_ktm_sundarijal}}"
+          },
+          {
+            "time": "09:30–10:00",
+            "type": "Other",
+            "details": "Check-in at eco-lodge or teahouse near Sundarijal entrance.",
+            "cost": "$0",
+            "notes": "Leave main luggage; carry only daypack for trek.",
+            "booking_link": null
+          },
+          {
+            "time": "10:00–12:30",
+            "type": "Transportation",
+            "details": "Hiking: Sundarijal → Chisapani (7 km, 2.5 hours). Stone steps, rhododendron forests, waterfalls.",
+            "cost": "$0",
+            "notes": "Steady uphill—take breaks; hydrate often.",
+            "booking_link": null
+          },
+          {
+            "time": "12:30–13:30",
+            "type": "Dining",
+            "details": "Himalayan Java Café, Chisapani – Coffee, sandwiches, dal bhat.",
+            "cost": "$7 per person",
+            "notes": "Famous for panoramic mountain views from terrace.",
+            "booking_link": "{{himalayan_java}}"
+          },
+          {
+            "time": "13:30–15:30",
+            "type": "Attraction Visit",
+            "details": "Chisapani Viewpoint & Village Walk – On clear days: Langtang, Ganesh Himal, and even Manaslu.",
+            "cost": "$0",
+            "notes": "Best visibility in morning, but afternoon often clear in October.",
+            "booking_link": null
+          },
+          {
+            "time": "18:30–19:30",
+            "type": "Dining",
+            "details": "Hotel Snow View Restaurant – Momo, thukpa, Nepali set meal.",
+            "cost": "$6 per person",
+            "notes": "Family-run; warm service.",
+            "booking_link": "{{hotel_snow_view}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Chisapani Eco Guesthouse",
+          "cost": "$18 per night",
+          "booking_link": "{{chisapani_guesthouse}}"
+        }
+      },
+      {
+        "date": "October 6, 2025",
+        "title": "Sacred Waters & Forest Descent",
+        "activities": [
+          {
+            "time": "06:30–07:00",
+            "type": "Attraction Visit",
+            "details": "Final sunrise view from Chisapani ridge.",
+            "cost": "$0",
+            "notes": "Quiet, spiritual start to the day.",
+            "booking_link": null
+          },
+          {
+            "time": "07:00–11:30",
+            "type": "Transportation",
+            "details": "Hiking: Chisapani → Shivapuri Peak → Budhanilkantha (14 km, ~4.5 hours).",
+            "cost": "$0",
+            "notes": "Longest hiking day; pack snacks and 2L water.",
+            "booking_link": null
+          },
+          {
+            "time": "11:30–12:30",
+            "type": "Attraction Visit",
+            "details": "Budhanilkantha Temple – Ancient Hindu temple housing a 5m reclining statue of Lord Vishnu.",
+            "cost": "$3 per person",
+            "notes": "Dress modestly; remove leather items before entry.",
+            "booking_link": null
+          },
+          {
+            "time": "12:30–13:30",
+            "type": "Dining",
+            "details": "Budhanilkantha Garden Restaurant – Fresh curries, rice, yogurt.",
+            "cost": "$6 per person",
+            "notes": "Peaceful garden setting under shade trees.",
+            "booking_link": "{{budhanilkantha_garden}}"
+          },
+          {
+            "time": "15:00–16:00",
+            "type": "Transportation",
+            "details": "Local bus or taxi from Budhanilkantha to Kirtipur (10 km, ~40 mins).",
+            "cost": "$1.50 (bus) or $7 (taxi)",
+            "notes": "Kirtipur offers quieter, historic stay vs. Thamel.",
+            "booking_link": "{{transport_budhanilkantha_kirtipur}}"
+          },
+          {
+            "time": "16:00–17:30",
+            "type": "Attraction Visit",
+            "details": "Kirtipur Heritage Walk – Medieval Newari town with cobblestone streets, ancient temples.",
+            "cost": "$0",
+            "notes": "Less touristy; great for cultural immersion.",
+            "booking_link": null
+          },
+          {
+            "time": "17:30–18:30",
+            "type": "Dining",
+            "details": "Kirtipur Kitchen – Homemade dal bhat, local greens, aachar (pickle).",
+            "cost": "$5 per person",
+            "notes": "Authentic home-cooked meals.",
+            "booking_link": "{{kirtipur_kitchen}}"
+          }
+        ],
+        "accommodation": {
+          "name": "Kirtipur Heritage Home",
+          "cost": "$20 per night",
+          "booking_link": "{{kirtipur_heritage_home}}"
+        }
+      },
+      {
+        "date": "October 7, 2025",
+        "title": "Historic Kirtipur Morning & Return",
+        "activities": [
+          {
+            "time": "08:00–09:30",
+            "type": "Attraction Visit",
+            "details": "Uma Maheshwar Temple & Kirtipur Viewpoint – Climb stone steps to hilltop temple with 360° views.",
+            "cost": "$0",
+            "notes": "Quiet morning—ideal for reflection and photos.",
+            "booking_link": null
+          },
+          {
+            "time": "10:30–11:30",
+            "type": "Transportation",
+            "details": "Local bus or taxi from Kirtipur to Thamel, Kathmandu (8 km, ~30–45 mins).",
+            "cost": "$1.50 (bus) or $6 (taxi)",
+            "notes": "Frequent transport; easy return.",
+            "booking_link": "{{transport_kirtipur_ktm}}"
+          },
+          {
+            "time": "11:30–12:30",
+            "type": "Dining",
+            "details": "The Garden of Dreams Café – Western-Nepali fusion, smoothies, espresso.",
+            "cost": "$9 per person",
+            "notes": "Relaxing garden ambiance after trek.",
+            "booking_link": "{{garden_of_dreams}}"
+          }
+        ],
+        "accommodation": null
+      }
+    ]
+  }
+}
