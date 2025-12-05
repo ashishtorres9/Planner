@@ -1,0 +1,53 @@
+[00:00:01.503] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 5.0.2
+[00:00:01.797] Server  LOG      ✓ Ready in 1047ms
+[00:00:05.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.430] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.430] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.430] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764947737957}
+[00:00:13.643] Server  LOG     [v0] Agent phase: "greeting"
+[00:00:13.649] Server  LOG     [v0] Extracted context: {}
+[00:00:13.651] Server  LOG     [v0] Using Qwen: false
+[00:00:54.982] Server  LOG     [v0] Agent phase: "greeting"
+[00:00:54.984] Server  LOG     [v0] Extracted context: {}
+[00:00:54.986] Server  LOG     [v0] Using Qwen: false
+[00:05:25.284] Server  LOG        Reload env: .env
+[00:05:47.204] Server  LOG     [v0] Using Qwen AI for response generation
+[00:05:50.758] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\.next\dev\server\chunks\node_modules__pnpm_a1ac7540._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.808] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\.next\dev\server\chunks\6bbd1_ai_dist_index_mjs_9c7bb7c1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.812] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\.next\dev\server\chunks\[root-of-the-server]__58aca980._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.880] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.905] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\.next\dev\server\chunks\c2795_next_dist_600efa6a._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.923] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.955] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.961] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.965] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.973] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.977] Server  ERROR   C:\Users\ashis\Desktop\HeritagePlanner\node_modules\.pnpm\next@16.0.3_@opentelemetry+_162ef2eee2977cfe0d3476575909914c\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:50.994] Server  LOG     [v0] Qwen call failed, using intelligent fallback: AI_APICallError: Unauthorized
+[00:05:50.996] Server  LOG     [v0] Agent phase: "trek-selection"
+[00:05:51.001] Server  LOG     [v0] Extracted context: {}
+[00:05:51.004] Server  LOG     [v0] Using Qwen: true
+[00:07:40.371] Server  LOG     [v0] Using DashScope/Qwen AI for response generation
+[00:07:43.972] Server  LOG     [v0] Agent phase: "trek-selection"
+[00:07:43.975] Server  LOG     [v0] Extracted context: {}
+[00:07:43.977] Server  LOG     [v0] Using Qwen: true
+[00:08:05.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:05.828] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:05.828] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:05.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764948218358}
+[00:08:09.859] Server  LOG     [v0] Using DashScope/Qwen AI for response generation
+[00:08:13.136] Server  LOG     [v0] Agent phase: "greeting"
+[00:08:13.138] Server  LOG     [v0] Extracted context: {}
+[00:08:13.140] Server  LOG     [v0] Using Qwen: true
+[00:08:55.024] Server  LOG     [v0] Using DashScope/Qwen AI for response generation
+[00:09:01.364] Server  LOG     [v0] Agent phase: "greeting"
+[00:09:01.367] Server  LOG     [v0] Extracted context: {}
+[00:09:01.369] Server  LOG     [v0] Using Qwen: true
+[00:09:34.401] Server  LOG     [v0] Using DashScope/Qwen AI for response generation
+[00:09:39.251] Server  LOG     [v0] Agent phase: "trek-selection"
+[00:09:39.254] Server  LOG     [v0] Extracted context: {}
+[00:09:39.256] Server  LOG     [v0] Using Qwen: true
+[00:09:57.411] Server  LOG     [v0] Using DashScope/Qwen AI for response generation
+[00:10:02.552] Server  LOG     [v0] Agent phase: "trek-selection"
+[00:10:02.555] Server  LOG     [v0] Extracted context: {}
+[00:10:02.557] Server  LOG     [v0] Using Qwen: true

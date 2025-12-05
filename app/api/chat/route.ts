@@ -1,4 +1,5 @@
 import { generateText } from "ai"
+import { createDeepInfra } from "@ai-sdk/deepinfra"
 import type { Trek, ChatMessage as ChatMessageType } from "@/lib/types"
 import { TrekAgentEngine } from "@/lib/agentic-engine"
 import { buildQwenPrompt, isQwenReady } from "@/lib/ai-config"
@@ -106,22 +107,68 @@ async function generateChatResponse(messages: ChatMessageType[], selectedTrek: T
 
   // If Qwen is configured, use it for richer responses
   if (isQwenReady()) {
-    try {
-      console.log("[v0] Using Qwen AI for response generation")
-      const { text } = await generateText({
-        model: "deepinfra/qwen-2.5-72b-instruct",
-        prompt: buildQwenPrompt(
-          messages.map((m) => ({ role: m.role, content: m.content })),
-          selectedTrek,
-        ),
-        maxTokens: 800,
-        temperature: 0.8,
-      })
-      return text
-    } catch (error) {
-      console.log("[v0] Qwen call failed, using intelligent fallback:", error)
-      return generateFallbackResponse(engine, messages, selectedTrek)
+    const prompt = buildQwenPrompt(
+      messages.map((m) => ({ role: m.role, content: m.content })),
+      selectedTrek,
+    )
+    
+    // Try DeepInfra first if DEEPINFRA_API_KEY is explicitly set
+    const deepInfraApiKey = process.env.DEEPINFRA_API_KEY
+    if (deepInfraApiKey) {
+      try {
+        console.log("[v0] Using DeepInfra/Qwen AI for response generation")
+        const deepInfra = createDeepInfra({ apiKey: deepInfraApiKey })
+        // Convert prompt to messages format for better compatibility
+        const result = await generateText({
+          model: deepInfra("deepinfra/qwen-2.5-72b-instruct"),
+          messages: [{ role: "user", content: prompt }],
+          maxOutputTokens: 800,
+          temperature: 0.8,
+        })
+        return result.text
+      } catch (error) {
+        console.log("[v0] DeepInfra call failed, falling back to DashScope:", error)
+        // Fall through to DashScope fallback
+      }
     }
+    
+    // Use DashScope API (QWEN_API_KEY or DASHSCOPE_API_KEY)
+    const dashScopeApiKey = process.env.DASHSCOPE_API_KEY || process.env.QWEN_API_KEY
+    if (dashScopeApiKey) {
+      try {
+        console.log("[v0] Using DashScope/Qwen AI for response generation")
+        const res = await fetch("https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${dashScopeApiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "qwen-plus",
+            messages: [{ role: "user", content: prompt }],
+            max_tokens: 800,
+            temperature: 0.8,
+          }),
+        })
+        
+        if (!res.ok) {
+          throw new Error(`DashScope API error: ${res.status} ${res.statusText}`)
+        }
+        
+        const data = await res.json()
+        if (data.choices?.[0]?.message?.content) {
+          return data.choices[0].message.content.trim()
+        }
+        throw new Error("No content in DashScope response")
+      } catch (error) {
+        console.log("[v0] DashScope call failed, using intelligent fallback:", error)
+        return generateFallbackResponse(engine, messages, selectedTrek)
+      }
+    }
+    
+    // If no API keys are available, use fallback
+    console.log("[v0] No Qwen API keys configured, using intelligent fallback")
+    return generateFallbackResponse(engine, messages, selectedTrek)
   }
 
   return generateFallbackResponse(engine, messages, selectedTrek)

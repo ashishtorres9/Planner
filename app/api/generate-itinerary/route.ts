@@ -1,4 +1,6 @@
 import { generateText } from "ai"
+import { createOpenAI } from "@ai-sdk/openai"
+import { createDeepInfra } from "@ai-sdk/deepinfra"
 import type { Trek, Itinerary } from "@/lib/types"
 
 const servicesData = {
@@ -120,13 +122,34 @@ Create a JSON response with this exact structure:
   "culturalTip": "..."
 }`
 
-    // When user adds DEEPINFRA_API_KEY, switch to: model: "deepinfra/alibaba/qwen-2-7b-instruct"
-    const { text } = await generateText({
-      model: "openai/gpt-4-mini",
-      prompt,
-      maxOutputTokens: 2000,
-      temperature: 0.7,
-    })
+    // Use OpenAI provider if OPENAI_API_KEY is available, otherwise use DeepInfra/Qwen
+    const openaiApiKey = process.env.OPENAI_API_KEY
+    const deepInfraApiKey = process.env.DEEPINFRA_API_KEY || process.env.QWEN_API_KEY
+    
+    let text: string
+    
+    if (openaiApiKey) {
+      const openai = createOpenAI({ apiKey: openaiApiKey })
+      const result = await generateText({
+        model: openai("gpt-4o-mini"),
+        prompt,
+        maxTokens: 2000,
+        temperature: 0.7,
+      })
+      text = result.text
+    } else if (deepInfraApiKey) {
+      // Use DeepInfra/Qwen when DEEPINFRA_API_KEY is set
+      const deepInfra = createDeepInfra({ apiKey: deepInfraApiKey })
+      const result = await generateText({
+        model: deepInfra("deepinfra/qwen-2.5-72b-instruct"),
+        prompt,
+        maxTokens: 2000,
+        temperature: 0.7,
+      })
+      text = result.text
+    } else {
+      throw new Error("No AI API key configured. Please set OPENAI_API_KEY, DEEPINFRA_API_KEY, or QWEN_API_KEY")
+    }
 
     console.log("[v0] AI generation successful")
     const jsonMatch = text.match(/\{[\s\S]*\}/)
