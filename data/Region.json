@@ -1,0 +1,262 @@
+[
+  {
+    "region_id": "kathmandu_valley",
+    "name_en": "Kathmandu Valley",
+    "name_new": "येँ लाय खलः",
+    "name_ne": "काठमाडौं उपत्यका",
+    "type": "cultural_basin",
+    "districts": ["Kathmandu", "Lalitpur", "Bhaktapur"],
+    "geography": {
+      "physiographic_zone": "Mid-Hills",
+      "altitude_range_m": [1300, 2200],
+      "max_elevation_m": 2175,
+      "max_point": "Nagarkot"
+    },
+    "culture": {
+      "primary_groups": ["Newar", "Brahmin", "Chhetri"],
+      "languages": ["Nepal Bhasa (Newari)", "Nepali"],
+      "key_festivals": ["Indra Jatra", "Dashain", "Tihar"],
+      "etiquette_notes": "Remove shoes before entering temples. Ask before photographing rituals."
+    },
+    "permit_rules": {
+      "national_park": false,
+      "conservation_area": false,
+      "tim_required": false,
+      "special_permit": null,
+      "notes": "No TIMS required. UNESCO site fees apply separately."
+    },
+    "eco_policy": {
+      "plastic_policy": "Low-impact trekking encouraged; no plastic in villages.",
+      "waste_management": "Unwritten 'Leave No Trace' rule. Pack out all non-biodegradable waste.",
+      "drone_policy": "Prohibited within 1 km of UNESCO World Heritage Sites."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Feb–Apr"],
+      "monsoon_months": ["Jun", "Jul", "Aug", "Sep"],
+      "winter_accessibility": "Excellent for cultural tourism; cool but pleasant."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 15000,
+      "group_discount": true,
+      "includes_entry_fees": true
+    }
+  },
+  {
+    "region_id": "mustang_foothills",
+    "name_en": "Mustang Foothills (Kagbeni–Jomsom Corridor)",
+    "name_new": "मुस्ताङ फुटहिल्स",
+    "name_ne": "मुस्ताङ फुटहिल्स",
+    "type": "trans_himalayan",
+    "districts": ["Mustang"],
+    "geography": {
+      "physiographic_zone": "Trans-Himalayan",
+      "altitude_range_m": [2600, 3800],
+      "max_elevation_m": 3800,
+      "max_point": "Kagbeni"
+    },
+    "culture": {
+      "primary_groups": ["Loba", "Thakali"],
+      "languages": ["Lowa", "Thakali", "Nepali"],
+      "key_festivals": ["Tiji Festival", "Mani Rimdu"],
+      "etiquette_notes": "Respect monastery silence. Dress modestly."
+    },
+    "permit_rules": {
+      "national_park": false,
+      "conservation_area": true,
+      "conservation_permit_name": "ACAP",
+      "tim_required": true,
+      "special_permit": "Upper Mustang RAP",
+      "guide_required": true,
+      "notes": "Solo trekking prohibited. Both RAP + ACAP required. RAP: USD 50/day (2025)."
+    },
+    "eco_policy": {
+      "plastic_policy": "Zero-waste policy in Kagbeni.",
+      "waste_management": "Carry all waste back. No open burning.",
+      "drone_policy": "Strictly prohibited near monasteries without multi-ministry permit."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Mar–May"],
+      "monsoon_months": ["Jul", "Aug"],
+      "winter_accessibility": "Extreme cold, snow above 3500m. Limited access."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 45000,
+      "group_discount": false,
+      "includes_entry_fees": true,
+      "permit_cost_included": true
+    }
+  },
+  {
+    "region_id": "eastern_hills_ilam",
+    "name_en": "Eastern Hills (Ilam–Antu Danda)",
+    "name_new": "पूर्वी पहाड (इलाम–अन्तु डाँडा)",
+    "name_ne": "पूर्वी पहाड (इलाम–अन्तु डाँडा)",
+    "type": "tea_terrace_ecozone",
+    "districts": ["Ilam"],
+    "geography": {
+      "physiographic_zone": "Eastern Mid-Hills",
+      "altitude_range_m": [1800, 2400],
+      "max_elevation_m": 2400,
+      "max_point": "Antu Danda"
+    },
+    "culture": {
+      "primary_groups": ["Limbu", "Rai"],
+      "languages": ["Limbu", "Rai", "Nepali"],
+      "key_festivals": ["Ubhauli", "Udhauli"],
+      "etiquette_notes": "Respect tea farm boundaries. Ask before entering organic zones."
+    },
+    "permit_rules": {
+      "national_park": false,
+      "conservation_area": false,
+      "tim_required": false,
+      "special_permit": null,
+      "notes": "No special permits. Entry fee for Mai Pokhari buffer zone."
+    },
+    "eco_policy": {
+      "plastic_policy": "Plastic banned in Mai Pokhari buffer zone.",
+      "waste_management": "Use designated bins in tea estates.",
+      "drone_policy": "Allowed with landowner permission."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Mar–Apr"],
+      "monsoon_months": ["Jun", "Jul", "Aug", "Sep"],
+      "winter_accessibility": "Mild. Morning frost possible."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 12000,
+      "group_discount": true,
+      "includes_entry_fees": true
+    }
+  },
+  {
+    "region_id": "manaslu_foothills",
+    "name_en": "Manaslu Foothills (Tsum Valley / Soti Khola)",
+    "name_new": "मनास्लु फुटहिल्स",
+    "name_ne": "मनास्लु फुटहिल्स",
+    "type": "trans_himalayan",
+    "districts": ["Gorkha"],
+    "geography": {
+      "physiographic_zone": "Mid-Western Himalaya",
+      "altitude_range_m": [1900, 3500],
+      "max_elevation_m": 3500,
+      "max_point": "Chumling"
+    },
+    "culture": {
+      "primary_groups": ["Tibetan-Buddhist", "Gurung"],
+      "languages": ["Tibetan", "Gurung", "Nepali"],
+      "key_festivals": ["Losar", "Lhosar"],
+      "etiquette_notes": "Circumambulate chortens clockwise. Do not point feet at shrines."
+    },
+    "permit_rules": {
+      "national_park": false,
+      "conservation_area": true,
+      "conservation_permit_name": "MCAP",
+      "tim_required": true,
+      "special_permit": "Manaslu RAP",
+      "guide_required": true,
+      "notes": "RAP + MCAP required. Solo trekking not allowed. Seasonal RAP fees apply."
+    },
+    "eco_policy": {
+      "plastic_policy": "Carry in, carry out policy enforced.",
+      "waste_management": "Human waste must be packed out above 3000m.",
+      "drone_policy": "Prohibited without MCAP + CAAN permit."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Mar–May"],
+      "monsoon_months": ["Jun", "Jul", "Aug", "Sep"],
+      "winter_accessibility": "Snow above 3000m. Remote villages isolated."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 38000,
+      "group_discount": false,
+      "includes_entry_fees": true,
+      "permit_cost_included": true
+    }
+  },
+  {
+    "region_id": "helambu",
+    "name_en": "Helambu Valley (Sundarijal to Tarkeghyang)",
+    "name_new": "हेलाम्बु उपत्यका",
+    "name_ne": "हेलाम्बु उपत्यका",
+    "type": "mid_hills_cultural",
+    "districts": ["Sindhupalchok"],
+    "geography": {
+      "physiographic_zone": "Mid-Hills",
+      "altitude_range_m": [1500, 3300],
+      "max_elevation_m": 3300,
+      "max_point": "Gangche"
+    },
+    "culture": {
+      "primary_groups": ["Tamang", "Sherpa"],
+      "languages": ["Tamang", "Sherpa", "Nepali"],
+      "key_festivals": ["Sonam Lhosar", "Buddha Jayanti"],
+      "etiquette_notes": "Respect sacred juniper trees. Do not whistle at night."
+    },
+    "permit_rules": {
+      "national_park": true,
+      "national_park_name": "Shivapuri Nagarjun National Park",
+      "conservation_area": false,
+      "tim_required": true,
+      "special_permit": null,
+      "notes": "TIMS + National Park Entry Permit required."
+    },
+    "eco_policy": {
+      "plastic_policy": "No plastic bottles above Sundarijal.",
+      "waste_management": "Use eco-toilets at teahouses.",
+      "drone_policy": "Prohibited in national park without written permission."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Mar–Apr"],
+      "monsoon_months": ["Jun", "Jul", "Aug", "Sep"],
+      "winter_accessibility": "Snow above 3000m. Trails icy."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 18000,
+      "group_discount": true,
+      "includes_entry_fees": true
+    }
+  },
+  {
+    "region_id": "shivapuri",
+    "name_en": "Shivapuri Nagarjun National Park",
+    "name_new": "शिवपुरी नागार्जुन राष्ट्रिय निकुञ्ज",
+    "name_ne": "शिवपुरी नागार्जुन राष्ट्रिय निकुञ्ज",
+    "type": "mid_hills_protected",
+    "districts": ["Kathmandu", "Nuwakot", "Sindhupalchok"],
+    "geography": {
+      "physiographic_zone": "Mid-Hills",
+      "altitude_range_m": [1400, 2700],
+      "max_elevation_m": 2732,
+      "max_point": "Shivapuri Peak"
+    },
+    "culture": {
+      "primary_groups": ["Tamang", "Newar", "Brahmin"],
+      "languages": ["Tamang", "Nepal Bhasa", "Nepali"],
+      "key_festivals": ["Shivaratri", "Dashain"],
+      "etiquette_notes": "Sacred watershed area. Maintain silence near religious sites."
+    },
+    "permit_rules": {
+      "national_park": true,
+      "national_park_name": "Shivapuri Nagarjun National Park",
+      "conservation_area": false,
+      "tim_required": true,
+      "special_permit": null,
+      "notes": "Foreigners require TIMS and National Park entry permit (NPR 1000)."
+    },
+    "eco_policy": {
+      "plastic_policy": "Strict no-plastic policy within park boundaries.",
+      "waste_management": "All waste must be carried out.",
+      "drone_policy": "Prohibited without written permission from park authorities and CAAN."
+    },
+    "seasonality": {
+      "best_seasons": ["Oct–Nov", "Mar–Apr"],
+      "monsoon_months": ["Jun", "Jul", "Aug", "Sep"],
+      "winter_accessibility": "Cold at higher elevations. Trails may be icy."
+    },
+    "pricing_meta": {
+      "base_npr_per_person": 15000,
+      "group_discount": true,
+      "includes_entry_fees": true
+    }
+  }
+]
