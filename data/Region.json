@@ -4,6 +4,12 @@
     "name_en": "Kathmandu Valley",
     "name_new": "येँ लाय खलः",
     "name_ne": "काठमाडौं उपत्यका",
+    "culture_group": "NWR",
+    "region_code": "KTM",
+    "ecotourism_tier": "A",
+    "traveler_fit": ["FM", "SL", "SP", "PH"],
+    "permit_class": "NON",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "cultural_basin",
     "districts": ["Kathmandu", "Lalitpur", "Bhaktapur"],
     "geography": {
@@ -13,7 +19,7 @@
       "max_point": "Nagarkot"
     },
     "culture": {
-      "primary_groups": ["Newar", "Brahmin", "Chhetri"],
+      "primary_groups": ["Newari", "Brahmin", "Chhetri"],
       "languages": ["Nepal Bhasa (Newari)", "Nepali"],
       "key_festivals": ["Indra Jatra", "Dashain", "Tihar"],
       "etiquette_notes": "Remove shoes before entering temples. Ask before photographing rituals."
@@ -46,6 +52,12 @@
     "name_en": "Mustang Foothills (Kagbeni–Jomsom Corridor)",
     "name_new": "मुस्ताङ फुटहिल्स",
     "name_ne": "मुस्ताङ फुटहिल्स",
+    "culture_group": "LOB",
+    "region_code": "MST",
+    "ecotourism_tier": "A",
+    "traveler_fit": ["AD", "PH", "SL"],
+    "permit_class": "STD",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "trans_himalayan",
     "districts": ["Mustang"],
     "geography": {
@@ -80,7 +92,7 @@
       "winter_accessibility": "Extreme cold, snow above 3500m. Limited access."
     },
     "pricing_meta": {
-      "base_npr_per_person": 45000,
+      "base_npr_per_person": 10500,
       "group_discount": false,
       "includes_entry_fees": true,
       "permit_cost_included": true
@@ -91,6 +103,12 @@
     "name_en": "Eastern Hills (Ilam–Antu Danda)",
     "name_new": "पूर्वी पहाड (इलाम–अन्तु डाँडा)",
     "name_ne": "पूर्वी पहाड (इलाम–अन्तु डाँडा)",
+    "culture_group": "LIM",
+    "region_code": "ILM",
+    "ecotourism_tier": "A+",
+    "traveler_fit": ["SL", "FM", "PH"],
+    "permit_class": "NON",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "tea_terrace_ecozone",
     "districts": ["Ilam"],
     "geography": {
@@ -123,7 +141,7 @@
       "winter_accessibility": "Mild. Morning frost possible."
     },
     "pricing_meta": {
-      "base_npr_per_person": 12000,
+      "base_npr_per_person": 7000,
       "group_discount": true,
       "includes_entry_fees": true
     }
@@ -133,6 +151,12 @@
     "name_en": "Manaslu Foothills (Tsum Valley / Soti Khola)",
     "name_new": "मनास्लु फुटहिल्स",
     "name_ne": "मनास्लु फुटहिल्स",
+    "culture_group": "GUR",
+    "region_code": "MNS",
+    "ecotourism_tier": "A",
+    "traveler_fit": ["AD", "SL", "SP"],
+    "permit_class": "STD",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "trans_himalayan",
     "districts": ["Gorkha"],
     "geography": {
@@ -167,7 +191,7 @@
       "winter_accessibility": "Snow above 3000m. Remote villages isolated."
     },
     "pricing_meta": {
-      "base_npr_per_person": 38000,
+      "base_npr_per_person": 10600,
       "group_discount": false,
       "includes_entry_fees": true,
       "permit_cost_included": true
@@ -178,6 +202,12 @@
     "name_en": "Helambu Valley (Sundarijal to Tarkeghyang)",
     "name_new": "हेलाम्बु उपत्यका",
     "name_ne": "हेलाम्बु उपत्यका",
+    "culture_group": "TAM",
+    "region_code": "HLB",
+    "ecotourism_tier": "A",
+    "traveler_fit": ["SL", "SP", "PH"],
+    "permit_class": "STD",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "mid_hills_cultural",
     "districts": ["Sindhupalchok"],
     "geography": {
@@ -211,7 +241,7 @@
       "winter_accessibility": "Snow above 3000m. Trails icy."
     },
     "pricing_meta": {
-      "base_npr_per_person": 18000,
+      "base_npr_per_person": 9900,
       "group_discount": true,
       "includes_entry_fees": true
     }
@@ -221,6 +251,12 @@
     "name_en": "Shivapuri Nagarjun National Park",
     "name_new": "शिवपुरी नागार्जुन राष्ट्रिय निकुञ्ज",
     "name_ne": "शिवपुरी नागार्जुन राष्ट्रिय निकुञ्ज",
+    "culture_group": "TAM",
+    "region_code": "SVP",
+    "ecotourism_tier": "A",
+    "traveler_fit": ["SL", "FM", "PH"],
+    "permit_class": "STD",
+    "seasonality_class": ["AUT", "SPR"],
     "type": "mid_hills_protected",
     "districts": ["Kathmandu", "Nuwakot", "Sindhupalchok"],
     "geography": {
@@ -230,7 +266,7 @@
       "max_point": "Shivapuri Peak"
     },
     "culture": {
-      "primary_groups": ["Tamang", "Newar", "Brahmin"],
+      "primary_groups": ["Tamang", "Newari", "Brahmin"],
       "languages": ["Tamang", "Nepal Bhasa", "Nepali"],
       "key_festivals": ["Shivaratri", "Dashain"],
       "etiquette_notes": "Sacred watershed area. Maintain silence near religious sites."
@@ -254,7 +290,7 @@
       "winter_accessibility": "Cold at higher elevations. Trails may be icy."
     },
     "pricing_meta": {
-      "base_npr_per_person": 15000,
+      "base_npr_per_person": 11700,
       "group_discount": true,
       "includes_entry_fees": true
     }
