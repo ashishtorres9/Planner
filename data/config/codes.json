@@ -50,3 +50,28 @@
     "O": "Other"
   }
 }
+{
+  "activity_type": {
+    "TRNS": "Transportation",
+    "ATR": "Attraction Visit",
+    "DIN": "Dining",
+    "ACM": "Accommodation",
+    "OTH": "Other"
+  },
+  "spiritual_significance": {
+    "HIGH": "High (ritual, pilgrimage)",
+    "MED": "Medium (temple, shrine)",
+    "LOW": "Low (scenic, cultural)",
+    "NONE": "None"
+  },
+  "accessibility": {
+    "EASY": "Paved/flat trails",
+    "MOD": "Moderate incline",
+    "HARD": "Steep/uneven terrain"
+  },
+  "cultural_immersion": {
+    "HIGH": "Homestay, ceremony, hands-on",
+    "MED": "Local guide, market visit",
+    "LOW": "Observation only"
+  }
+}
