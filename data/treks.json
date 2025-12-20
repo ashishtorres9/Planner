@@ -11,16 +11,14 @@
       "permit_class": "NON",
       "traveler_fit": ["SL", "SP", "PH", "FM"],
       "ecotourism_tier": "A",
+      "spiritual_significance": "HIGH",
+      "cultural_immersion": "MED",
+      "accessibility": "EASY",
       "min_npr": 15000,
       "max_npr": 18000,
       "duration_days": 3,
       "description": "A 3-day spiritual journey from Himalayan viewpoints in Nagarkot to the sacred Namobuddha Monastery, passing through UNESCO-listed Changunarayan Temple.",
-      "highlights": [
-        "Nagarkot Himalayan sunrise",
-        "Changunarayan UNESCO Temple",
-        "Namobuddha Monastery pilgrimage",
-        "Newari heritage trails"
-      ]
+      "highlights": ["Nagarkot Himalayan sunrise", "Changunarayan UNESCO Temple", "Namobuddha Monastery pilgrimage", "Newari heritage trails"]
     },
     {
       "id": "mustang-foothills",
@@ -33,16 +31,14 @@
       "permit_class": "STD",
       "traveler_fit": ["AD", "PH", "SL"],
       "ecotourism_tier": "A",
+      "spiritual_significance": "HIGH",
+      "cultural_immersion": "HIGH",
+      "accessibility": "MOD",
       "min_npr": 10500,
       "max_npr": 16000,
       "duration_days": 3,
       "description": "Explore red cliffs, ancient sky caves, and apple orchards in the Trans-Himalayan zone—without the Upper Mustang restricted permit.",
-      "highlights": [
-        "Kagbeni medieval village",
-        "Chhoser Sky Caves",
-        "Muktinath Temple",
-        "Apple brandy tasting"
-      ]
+      "highlights": ["Kagbeni medieval village", "Chhoser Sky Caves", "Muktinath Temple", "Apple brandy tasting"]
     },
     {
       "id": "ilam-tea-gardens",
@@ -55,16 +51,14 @@
       "permit_class": "NON",
       "traveler_fit": ["SL", "FM", "PH"],
       "ecotourism_tier": "A+",
+      "spiritual_significance": "LOW",
+      "cultural_immersion": "HIGH",
+      "accessibility": "EASY",
       "min_npr": 7000,
       "max_npr": 9000,
       "duration_days": 3,
       "description": "Walk through organic tea estates, witness Kanchenjunga at dawn, and experience Limbu heritage in Nepal’s eastern hills.",
-      "highlights": [
-        "Mai Pokhari sacred lake",
-        "Antu Danda sunrise viewpoint",
-        "Limbu chyabrung drum rhythms",
-        "Organic tea plucking"
-      ]
+      "highlights": ["Mai Pokhari sacred lake", "Antu Danda sunrise viewpoint", "Limbu chyabrung drum rhythms", "Organic tea plucking"]
     },
     {
       "id": "manaslu-foothills",
@@ -77,16 +71,14 @@
       "permit_class": "STD",
       "traveler_fit": ["AD", "SL", "SP"],
       "ecotourism_tier": "A",
+      "spiritual_significance": "HIGH",
+      "cultural_immersion": "HIGH",
+      "accessibility": "HARD",
       "min_npr": 10600,
       "max_npr": 13400,
       "duration_days": 3,
       "description": "Trek through Gurung villages, sacred waterfalls, and snow leopard corridors—enjoying Manaslu views without the restricted area permit.",
-      "highlights": [
-        "Kharibot Gurung homestay",
-        "Rupina La sacred waterfall",
-        "Manaslu southern face views",
-        "Ghyabring drum rituals"
-      ]
+      "highlights": ["Kharibot Gurung homestay", "Rupina La sacred waterfall", "Manaslu southern face views", "Ghyabring drum rituals"]
     },
     {
       "id": "kavre-hidden-circuit",
@@ -99,16 +91,14 @@
       "permit_class": "NON",
       "traveler_fit": ["FM", "SL", "SP"],
       "ecotourism_tier": "A+",
+      "spiritual_significance": "MED",
+      "cultural_immersion": "HIGH",
+      "accessibility": "EASY",
       "min_npr": 8400,
       "max_npr": 10000,
       "duration_days": 3,
       "description": "Discover forgotten trails, living temples, and 200-year-old Newari courtyards in this zero-permit, zero-crowd loop near Kathmandu.",
-      "highlights": [
-        "Nag Dhunga serpent stones",
-        "Gufa Devi cave shrine",
-        "Kavre heritage courtyards",
-        "Sacred river confluence"
-      ]
+      "highlights": ["Nag Dhunga serpent stones", "Gufa Devi cave shrine", "Kavre heritage courtyards", "Sacred river confluence"]
     },
     {
       "id": "helambu-tamang",
@@ -121,16 +111,14 @@
       "permit_class": "STD",
       "traveler_fit": ["SL", "SP", "PH"],
       "ecotourism_tier": "A",
+      "spiritual_significance": "HIGH",
+      "cultural_immersion": "HIGH",
+      "accessibility": "MOD",
       "min_npr": 9900,
       "max_npr": 12500,
       "duration_days": 3,
       "description": "Immerse in authentic Tamang culture, soak in hot springs, and trek through alpine meadows in the serene Helambu region.",
-      "highlights": [
-        "Gatlang Tamang homestay",
-        "Tatopani natural hot springs",
-        "Thuman village rituals",
-        "Langtang range views"
-      ]
+      "highlights": ["Gatlang Tamang homestay", "Tatopani natural hot springs", "Thuman village rituals", "Langtang range views"]
     },
     {
       "id": "shivapuri-escape",
@@ -143,16 +131,14 @@
       "permit_class": "STD",
       "traveler_fit": ["SL", "FM", "PH"],
       "ecotourism_tier": "A",
+      "spiritual_significance": "MED",
+      "cultural_immersion": "MED",
+      "accessibility": "MOD",
       "min_npr": 11700,
       "max_npr": 14000,
       "duration_days": 3,
       "description": "A 3-day trek through protected forests, Buddhist shrines, and Newari heritage towns — all within 1 hour of Kathmandu.",
-      "highlights": [
-        "Shivapuri Peak (2,732m)",
-        "Chisapani Himalayan viewpoint",
-        "Budhanilkantha Vishnu Temple",
-        "Kirtipur heritage walk"
-      ]
+      "highlights": ["Shivapuri Peak (2,732m)", "Chisapani Himalayan viewpoint", "Budhanilkantha Vishnu Temple", "Kirtipur heritage walk"]
     }
   ]
 }
