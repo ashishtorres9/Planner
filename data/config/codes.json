@@ -44,13 +44,6 @@
     "A": "High Standard",
     "B": "Basic Sustainable"
   },
-  "gender": {
-    "M": "Male",
-    "F": "Female",
-    "O": "Other"
-  }
-}
-{
   "activity_type": {
     "TRNS": "Transportation",
     "ATR": "Attraction Visit",
