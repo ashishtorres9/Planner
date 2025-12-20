@@ -1,0 +1,52 @@
+{
+  "culture_group": {
+    "NWR": "Newari",
+    "SUN": "Sunuwar",
+    "TAM": "Tamang",
+    "GUR": "Gurung",
+    "LIM": "Limbu",
+    "LOB": "Loba (Mustangi)"
+  },
+  "region": {
+    "KTM": "Kathmandu Valley",
+    "MST": "Mustang Foothills",
+    "ILM": "Eastern Hills (Ilam)",
+    "MNS": "Manaslu Foothills",
+    "HLB": "Helambu",
+    "SVP": "Shivapuri"
+  },
+  "difficulty": {
+    "E": "Easy",
+    "M": "Moderate",
+    "C": "Challenging",
+    "H": "Hard"
+  },
+  "seasonality": {
+    "AUT": "Autumn (Oct–Nov)",
+    "SPR": "Spring (Mar–May)",
+    "WTR": "Winter (Dec–Feb)",
+    "YR": "Year-round"
+  },
+  "permit_class": {
+    "NON": "None",
+    "STD": "Standard (TIMS/ACAP)",
+    "RST": "Restricted (Special Permit)"
+  },
+  "traveler_fit": {
+    "SL": "Solo",
+    "FM": "Family",
+    "PH": "Photographer",
+    "SP": "Spiritual",
+    "AD": "Adventure"
+  },
+  "ecotourism_tier": {
+    "A+": "Premium Sustainable",
+    "A": "High Standard",
+    "B": "Basic Sustainable"
+  },
+  "gender": {
+    "M": "Male",
+    "F": "Female",
+    "O": "Other"
+  }
+}
