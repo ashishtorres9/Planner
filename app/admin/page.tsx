@@ -3,7 +3,7 @@ import { ServiceListing } from "@/components/service-listing"
 
 export const metadata = {
   title: "Service Provider Dashboard - Heritage Hub Nepal",
-  description: "Register and manage your accommodation and guiding services",
+  description: "Register and manage your accommodation,transport and guiding services",
 }
 
 export default function AdminPage() {
