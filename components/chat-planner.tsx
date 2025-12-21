@@ -8,18 +8,16 @@ import { MinchaChatAvatar } from "./mincha-chat-avatar";
 import { decodeCulture, decodeDifficulty, decodeAccessibility, decodeSpiritual } from "@/lib/codes";
 import { QUICK_START_PRESETS } from "@/lib/quick-presets";
 
-// Load all data at build time
+// Load data at build time (Next.js compatible)
 const TREKS_DATA = require("@/data/public/treks.json").treks as Trek[];
 const ITINERARIES_DATA = require("@/data/public/itineraries.json");
 
-// Currency conversion (NPR base)
-const EXCHANGE_RATES = {
-  NPR: 1,
-  INR: 1.6,
-  USD: 133,
-  CNY: 18.5,
-  LKR: 0.45,
-  BDT: 1.2,
+// Currency formatter (NPR base)
+const formatPriceRange = (minNpr: number, maxNpr: number, currency: string): string => {
+  if (currency === "NPR") {
+    return `₨ ${minNpr.toLocaleString()}–${maxNpr.toLocale,}`;
+  }
+  return `${minNpr}–${maxNpr} NPR`;
 };
 
 export function ChatPlanner() {
@@ -35,17 +33,16 @@ export function ChatPlanner() {
   const [loading, setLoading] = useState(false);
   const [selectedTrek, setSelectedTrek] = useState<Trek | null>(null);
   const [showPresets, setShowPresets] = useState(true);
-  const [userLanguage, setUserLanguage] = useState("en");
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  // Strict Qwen prompt: ONLY use your 7 treks
   const getSystemPrompt = () => {
-    const trekData = TREKS_DATA.map((trek) => ({
+    const trekData = TREKS_DATA.map(trek => ({
       id: trek.id,
-      trek_code: trek.trek_code,
       name: trek.name,
       culture_group: trek.culture_group,
       region_id: trek.region_id,
@@ -53,32 +50,31 @@ export function ChatPlanner() {
       min_npr: trek.min_npr,
       max_npr: trek.max_npr,
       spiritual_significance: trek.spiritual_significance,
-      cultural_immersion: trek.cultural_immersion,
       accessibility: trek.accessibility,
-      duration_days: trek.duration_days,
-      highlights: trek.highlights,
+      duration_days: trek.duration_days
     }));
 
     return `
-You are Mincha, Heritage Hub Nepal's AI travel agent. Respond in ${userLanguage === "en" ? "English" : "the user's language"}.
+You are Mincha, Heritage Hub Nepal's AI agent.
 
-Available treks (with codes and metadata):
+**RULES:**
+1. ONLY suggest treks from this EXACT list:
 ${JSON.stringify(trekData, null, 2)}
-
-ALWAYS reply with VALID JSON in this EXACT format:
+2. NEVER invent new treks, regions, or itineraries.
+3. If the user asks for something outside this list, say:
+   "I only offer these authentic cultural treks: ${TREKS_DATA.map(t => t.name).join(', ')}. Would you like details on one of these?"
+4. ALWAYS reply with VALID JSON in this format:
 {
-  "response": "Your friendly reply.",
+  "response": "Your reply",
   "suggestedTrek": {
     "id": "string",
     "name": "string",
     "culture_group": "string",
     "region_id": "string",
     "difficulty": "string",
-    "trek_code": "string",
     "min_npr": number,
     "max_npr": number,
     "spiritual_significance": "string",
-    "cultural_immersion": "string",
     "accessibility": "string",
     "duration_days": number,
     "itineraryPreview": [
@@ -88,7 +84,6 @@ ALWAYS reply with VALID JSON in this EXACT format:
     "pdfUrl": "/itineraries/id.pdf"
   }
 }
-NEVER add markdown, explanations, or extra text. ONLY JSON.
 `;
   };
 
@@ -100,14 +95,14 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
       content: userMessage,
       timestamp: new Date(),
     };
-    setMessages((prev) => [...prev, newUserMessage]);
+    setMessages(prev => [...prev, newUserMessage]);
     setLoading(true);
 
     try {
       const chatHistory = [
         { role: "system", content: getSystemPrompt() },
-        ...messages.slice(1).map((m) => ({ role: m.role, content: m.content })),
-        { role: "user", content: userMessage },
+        ...messages.slice(1).map(m => ({ role: m.role, content: m.content })),
+        { role: "user", content: userMessage }
       ];
 
       const apiKey = process.env.NEXT_PUBLIC_QWEN_API_KEY;
@@ -117,19 +112,20 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
         method: "POST",
         headers: {
           Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           model: "qwen-turbo",
           input: { messages: chatHistory },
-          parameters: { result_format: "message", max_tokens: 1024 },
-        }),
+          parameters: { result_format: "message", max_tokens: 1024 }
+        })
       });
 
       if (!response.ok) throw new Error("Qwen API error");
       const data = await response.json();
       const content = data.output.choices[0].message.content;
 
+      // Parse JSON
       let parsed;
       try {
         const jsonMatch = content.match(/```json\s*({.*?})\s*```/s);
@@ -139,21 +135,21 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
         throw new Error("Invalid JSON from Qwen");
       }
 
+      // Enhance with itinerary preview
       if (parsed.suggestedTrek) {
         const itinerary = ITINERARIES_DATA[parsed.suggestedTrek.id];
         if (itinerary) {
-          parsed.suggestedTrek.itineraryPreview = itinerary.itineraryDays.slice(0, 2).map((day) => ({
+          parsed.suggestedTrek.itineraryPreview = itinerary.itineraryDays.slice(0, 2).map(day => ({
             day: day.dayNumber,
             title: day.title,
             meals: day.mealsIncluded || "",
             accommodation: day.accommodation?.type.join(", ") || "",
-            transport: day.transport?.type.join(", ") || "",
+            transport: day.transport?.type.join(", ") || ""
           }));
         }
         parsed.suggestedTrek.whatsappLink = `https://wa.me/977984123456?text=${encodeURIComponent(
-          `Namaka Mincha! I am interested in booking the ${parsed.suggestedTrek.name}.`
+          `Namaste Mincha! I am interested in booking the ${parsed.suggestedTrek.name}.`
         )}`;
-        parsed.suggestedTrek.pdfUrl = `/itineraries/${parsed.suggestedTrek.id}.pdf`;
       }
 
       const assistantMessage: ChatMessageType = {
@@ -162,9 +158,10 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
         content: parsed.response,
         timestamp: new Date(),
         suggestedTreks: parsed.suggestedTrek ? [parsed.suggestedTrek] : [],
+        itineraryPreview: parsed.suggestedTrek?.itineraryPreview
       };
 
-      setMessages((prev) => [...prev, assistantMessage]);
+      setMessages(prev => [...prev, assistantMessage]);
       if (parsed.suggestedTrek) setSelectedTrek(parsed.suggestedTrek);
     } catch (error) {
       console.error("Chat error:", error);
@@ -174,7 +171,7 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
         content: "Mincha is reflecting... Please try again!",
         timestamp: new Date(),
       };
-      setMessages((prev) => [...prev, errorMessage]);
+      setMessages(prev => [...prev, errorMessage]);
     } finally {
       setLoading(false);
     }
@@ -182,20 +179,12 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
 
   const handleSelectTrek = (trek: Trek) => {
     setSelectedTrek(trek);
-    const userMsg = `Let's explore the ${trek.name} trek focusing on ${decodeCulture(trek.culture_group)} culture. Can you create a detailed 3-day itinerary?`;
+    const userMsg = `Let's explore the ${trek.name} trek focusing on ${trek.culture} culture. Can you create a detailed 3-day itinerary?`;
     handleSendMessage(userMsg);
   };
 
   const handleSelectPreset = (preset: (typeof QUICK_START_PRESETS)[0]) => {
     handleSendMessage(preset.message);
-  };
-
-  const formatPriceRange = (minNpr: number, maxNpr: number, currency: string): string => {
-    const rate = EXCHANGE_RATES[currency as keyof typeof EXCHANGE_RATES] || 1;
-    const min = Math.round(minNpr / rate);
-    const max = Math.round(maxNpr / rate);
-    if (min === max) return currency === "NPR" ? `₨ ${min.toLocaleString()}` : `${currency} ${min}`;
-    return currency === "NPR" ? `₨ ${min.toLocaleString()}–${max.toLocaleString()}` : `${currency} ${min}–${max}`;
   };
 
   return (
@@ -226,12 +215,11 @@ NEVER add markdown, explanations, or extra text. ONLY JSON.
                 decodeDifficulty={decodeDifficulty}
                 decodeAccessibility={decodeAccessibility}
                 decodeSpiritual={decodeSpiritual}
-                formatPriceRange={formatPriceRange}
               />
             </div>
           ))}
 
-          {/* ✨ BEAUTIFIED QUICK START PRESETS */}
+          {/* Quick Start Presets */}
           {showPresets && messages.length === 1 && (
             <div className="mt-8 space-y-4">
               <p className="text-sm font-medium text-foreground px-2 flex items-center gap-2">
