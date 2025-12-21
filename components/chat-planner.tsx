@@ -15,7 +15,7 @@ const ITINERARIES_DATA = require("@/data/public/itineraries.json");
 // Currency formatter (NPR base)
 const formatPriceRange = (minNpr: number, maxNpr: number, currency: string): string => {
   if (currency === "NPR") {
-    return `₨ ${minNpr.toLocaleString()}–${maxNpr.toLocaleString(),}`;
+    return `₨ ${minNpr.toLocaleString()}–${maxNpr.toLocaleString()}`; // ✅ FIXED
   }
   return `${minNpr}–${maxNpr} NPR`;
 };
