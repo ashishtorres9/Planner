@@ -1,15 +1,27 @@
-"use client"
+// components/chat-message.tsx
+"use client";
 
-import type { ChatMessage as ChatMessageType, Trek } from "@/lib/types"
-import { ItineraryDisplay } from "./itinerary-display"
-import { Button } from "@/components/ui/button"
+import type { ChatMessage as ChatMessageType, Trek } from "@/lib/types";
+import { ItineraryDisplay } from "./itinerary-display";
+import { Button } from "@/components/ui/button";
 
 interface ChatMessageProps {
-  message: ChatMessageType
-  onSelectTrek: (trek: Trek) => void
+  message: ChatMessageType;
+  onSelectTrek: (trek: Trek) => void;
+  decodeCulture: (code: string) => string;
+  decodeDifficulty: (code: string) => string;
+  decodeAccessibility: (code: string) => string;
+  decodeSpiritual: (code: string) => string;
 }
 
-export function ChatMessage({ message, onSelectTrek }: ChatMessageProps) {
+export function ChatMessage({
+  message,
+  onSelectTrek,
+  decodeCulture,
+  decodeDifficulty,
+  decodeAccessibility,
+  decodeSpiritual,
+}: ChatMessageProps) {
   return (
     <div className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
       <div
@@ -22,24 +34,83 @@ export function ChatMessage({ message, onSelectTrek }: ChatMessageProps) {
         <p className="text-sm md:text-base leading-relaxed whitespace-pre-wrap">{message.content}</p>
 
         {message.suggestedTreks && message.suggestedTreks.length > 0 && (
-          <div className="mt-5 space-y-3">
+          <div className="mt-5 space-y-4">
             <p className="text-xs font-semibold opacity-75 uppercase tracking-wide">Suggested Treks</p>
-            <div className="grid gap-2">
-              {message.suggestedTreks.map((trek) => (
-                <Button
-                  key={trek.id}
-                  variant="outline"
-                  className="justify-start h-auto py-3 px-4 text-left hover:bg-secondary/10 bg-white/50 dark:bg-slate-800/50 border border-primary/20 hover:border-primary/50 transition-all duration-300 rounded-lg"
-                  onClick={() => onSelectTrek(trek)}
-                >
-                  <div className="space-y-1 w-full">
-                    <div className="font-semibold text-sm text-foreground">{trek.name}</div>
-                    <div className="text-xs opacity-70">
-                      {trek.culture} • {trek.difficulty}
+            <div className="grid gap-3">
+              {message.suggestedTreks.map((trek) => {
+                const cultureName = trek.culture_group 
+                  ? decodeCulture(trek.culture_group) 
+                  : trek.culture;
+                const difficultyName = decodeDifficulty(trek.difficulty);
+                const accessibilityName = trek.accessibility 
+                  ? decodeAccessibility(trek.accessibility) 
+                  : "";
+                const spiritualName = trek.spiritual_significance 
+                  ? decodeSpiritual(trek.spiritual_significance) 
+                  : "";
+
+                return (
+                  <div
+                    key={trek.id}
+                    className="bg-white/60 dark:bg-slate-900/60 backdrop-blur-md rounded-xl p-4 border border-border/50 hover:border-primary/50 transition-all duration-300"
+                  >
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h3 className="font-bold text-foreground">{trek.name}</h3>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                            {cultureName}
+                          </span>
+                          <span className="text-xs text-muted-foreground">• {difficultyName}</span>
+                        </div>
+                      </div>
+                      <span className="text-sm font-bold text-foreground">
+                        ₨ {trek.min_npr.toLocaleString()}–{trek.max_npr.toLocaleString()}
+                      </span>
                     </div>
+
+                    {/* Badges */}
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {spiritualName && (
+                        <span className="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded">
+                          {spiritualName}
+                        </span>
+                      )}
+                      {accessibilityName && (
+                        <span className="text-[10px] bg-green-100 text-green-800 px-2 py-0.5 rounded">
+                          {accessibilityName}
+                        </span>
+                      )}
+                      <span className="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded">
+                        {trek.duration_days} Days
+                      </span>
+                    </div>
+
+                    {/* Itinerary Preview */}
+                    {trek.itineraryPreview && (
+                      <div className="mt-3 space-y-2">
+                        {trek.itineraryPreview.slice(0, 2).map((day, idx) => (
+                          <div key={idx} className="text-xs text-muted-foreground flex gap-2">
+                            <span className="font-bold">Day {day.day}:</span>
+                            <span>{day.title}</span>
+                            {day.meals && <span className="text-green-600">({day.meals})</span>}
+                            {day.accommodation && <span className="text-orange-600">• {day.accommodation}</span>}
+                            {day.transport && <span className="text-blue-600">• {day.transport}</span>}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    <Button
+                      variant="outline"
+                      className="w-full mt-3 h-auto py-2 text-xs font-medium bg-white/40 hover:bg-primary/10 border-primary/30 hover:border-primary/50"
+                      onClick={() => onSelectTrek(trek)}
+                    >
+                      View Full Itinerary & WhatsApp
+                    </Button>
                   </div>
-                </Button>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
@@ -51,5 +122,5 @@ export function ChatMessage({ message, onSelectTrek }: ChatMessageProps) {
         )}
       </div>
     </div>
-  )
+  );
 }
