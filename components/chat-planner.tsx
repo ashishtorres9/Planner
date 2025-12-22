@@ -8,19 +8,13 @@ import { MinchaChatAvatar } from "./mincha-chat-avatar";
 import { decodeCulture, decodeDifficulty, decodeAccessibility, decodeSpiritual } from "@/lib/codes";
 import { QUICK_START_PRESETS } from "@/lib/quick-presets";
 
-// Load data at build time (Next.js compatible)
-const TREKS_DATA = require("@/data/public/treks.json").treks as Trek[];
-const ITINERARIES_DATA = require("@/data/public/itineraries.json");
+// ✅ REMOVE require() — data comes from props
+interface ChatPlannerProps {
+  initialTreks: Trek[];
+  initialItineraries: Record<string, any>;
+}
 
-// Currency formatter (NPR base)
-const formatPriceRange = (minNpr: number, maxNpr: number, currency: string): string => {
-  if (currency === "NPR") {
-    return `₨ ${minNpr.toLocaleString()}–${maxNpr.toLocaleString()}`; // ✅ FIXED
-  }
-  return `${minNpr}–${maxNpr} NPR`;
-};
-
-export function ChatPlanner() {
+export function ChatPlanner({ initialTreks, initialItineraries }: ChatPlannerProps) {
   const [messages, setMessages] = useState<ChatMessageType[]>([
     {
       id: "1",
@@ -39,7 +33,10 @@ export function ChatPlanner() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // Strict Qwen prompt: ONLY use your 7 treks
+  // ✅ Use passed-in data
+  const TREKS_DATA = initialTreks;
+  const ITINERARIES_DATA = initialItineraries;
+
   const getSystemPrompt = () => {
     const trekData = TREKS_DATA.map(trek => ({
       id: trek.id,
@@ -108,6 +105,7 @@ ${JSON.stringify(trekData, null, 2)}
       const apiKey = process.env.NEXT_PUBLIC_QWEN_API_KEY;
       if (!apiKey) throw new Error("Missing NEXT_PUBLIC_QWEN_API_KEY");
 
+      // ✅ Fix: remove extra spaces in API URL
       const response = await fetch("https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation", {
         method: "POST",
         headers: {
@@ -125,7 +123,6 @@ ${JSON.stringify(trekData, null, 2)}
       const data = await response.json();
       const content = data.output.choices[0].message.content;
 
-      // Parse JSON
       let parsed;
       try {
         const jsonMatch = content.match(/```json\s*({.*?})\s*```/s);
@@ -135,7 +132,6 @@ ${JSON.stringify(trekData, null, 2)}
         throw new Error("Invalid JSON from Qwen");
       }
 
-      // Enhance with itinerary preview
       if (parsed.suggestedTrek) {
         const itinerary = ITINERARIES_DATA[parsed.suggestedTrek.id];
         if (itinerary) {
@@ -187,6 +183,13 @@ ${JSON.stringify(trekData, null, 2)}
     handleSendMessage(preset.message);
   };
 
+  const formatPriceRange = (minNpr: number, maxNpr: number, currency: string): string => {
+    if (currency === "NPR") {
+      return `₨ ${minNpr.toLocaleString()}–${maxNpr.toLocaleString()}`;
+    }
+    return `${minNpr}–${maxNpr} NPR`;
+  };
+
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <div className="border-b border-border/50 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md sticky top-0 z-10">
@@ -215,11 +218,11 @@ ${JSON.stringify(trekData, null, 2)}
                 decodeDifficulty={decodeDifficulty}
                 decodeAccessibility={decodeAccessibility}
                 decodeSpiritual={decodeSpiritual}
+                formatPriceRange={formatPriceRange}
               />
             </div>
           ))}
 
-          {/* Quick Start Presets */}
           {showPresets && messages.length === 1 && (
             <div className="mt-8 space-y-4">
               <p className="text-sm font-medium text-foreground px-2 flex items-center gap-2">
