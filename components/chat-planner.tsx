@@ -8,7 +8,6 @@ import { MinchaChatAvatar } from "./mincha-chat-avatar";
 import { decodeCulture, decodeDifficulty, decodeAccessibility, decodeSpiritual } from "@/lib/codes";
 import { QUICK_START_PRESETS } from "@/lib/quick-presets";
 
-// ✅ REMOVE require() — data comes from props
 interface ChatPlannerProps {
   initialTreks: Trek[];
   initialItineraries: Record<string, any>;
@@ -33,7 +32,6 @@ export function ChatPlanner({ initialTreks, initialItineraries }: ChatPlannerPro
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // ✅ Use passed-in data
   const TREKS_DATA = initialTreks;
   const ITINERARIES_DATA = initialItineraries;
 
@@ -105,7 +103,7 @@ ${JSON.stringify(trekData, null, 2)}
       const apiKey = process.env.NEXT_PUBLIC_QWEN_API_KEY;
       if (!apiKey) throw new Error("Missing NEXT_PUBLIC_QWEN_API_KEY");
 
-      // ✅ Fix: remove extra spaces in API URL
+      // ✅ FIXED: Removed trailing spaces
       const response = await fetch("https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation", {
         method: "POST",
         headers: {
@@ -143,6 +141,7 @@ ${JSON.stringify(trekData, null, 2)}
             transport: day.transport?.type.join(", ") || ""
           }));
         }
+        // ✅ FIXED: Removed trailing spaces
         parsed.suggestedTrek.whatsappLink = `https://wa.me/977984123456?text=${encodeURIComponent(
           `Namaste Mincha! I am interested in booking the ${parsed.suggestedTrek.name}.`
         )}`;
